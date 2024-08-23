@@ -1,0 +1,76 @@
+@font-face {
+    font-family: myfont;
+    src: url(Detourne.ttf);
+}
+body{
+    margin: 50px;
+    padding: 0;
+    font-family: "Monstserrat",sans-serif;
+    background-color: rgb(189, 38, 154);
+   background-image: url(abhi.jpeg);
+
+background-size: cover;
+/* 
+ mix-blend-mode: multiply; */
+}
+
+
+
+
+h1{
+    font-size: 110px;
+    text-transform: uppercase;
+    /* background-color: rgb(235, 100, 51); */
+ 
+    font-weight: 900;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+    margin: 0;
+    background: url(bagl.jpeg)50% 50%;  
+    background-size: cover;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation-name: slide;
+  text-shadow: 12px  14px 20px;
+  animation-duration: 5s;
+  animation-delay: 8s;
+   
+}
+
+
+.btn{
+   padding: 25px 30px;
+   border:none;
+   outline: none;
+   color: #dcdae4;
+   background-color: rgb(102, 111, 203);
+   left: 10%;
+   top: 510px;
+   cursor: pointer;
+   box-shadow: 0 05px rgba(134, 163, 197, 0.666),
+   0 0 25px rgb(101, 110, 191);
+   font-family: myfont;
+   position: relative;
+   z-index: 0;
+   font-size: 1.5rem;
+   border-radius: 12px;
+   transition: all 0.4s;
+
+}
+
+.btn:hover{
+    box-shadow: 0 0 5px rgb(67, 137, 228),
+    0 0 25px rgb(85, 73, 162) , 0 0 50px rgb(111, 87, 190),
+    0 0 100px rgb(103, 104, 158) , 0  0 200px rgb(87, 66, 183);
+    transform: scale(1.3);
+
+}
+
+
+.balloon{
+   
+}

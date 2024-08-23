@@ -1,0 +1,234 @@
+@font-face {
+    font-family: myfont;
+    src: url(Detourne.ttf);
+  }
+  
+  *{
+    box-sizing: border-box;
+    
+    padding: 0;
+    margin: 0;
+    /* box-sizing: border-box; */
+   }
+  
+  
+  body{
+  background-color: #353543;
+  /* display: flex; */
+  height:500px;
+  width: 900px;
+  /* background-image: url(birth.jpg);
+  background-size:cover ; */
+  
+  justify-content: center;
+  align-items: center;
+  
+     
+     
+      /* height: 30vh; */
+     /* width: 50vh; */
+      margin: 0;
+    
+  }
+  
+  
+  
+  
+  img{
+      /* mix-blend-mode: multiply;
+      transform: translateY(1200px); */
+      /* width: 500px; */
+      /* height: max-content; */
+  }
+  
+  
+  .back img{
+  
+    /* background-size: contain; */
+    height: 600px;
+    width: 600px;
+    
+    
+     mix-blend-mode: multiply;
+    /* height: max-content; */
+   
+   
+  }
+  
+  
+  
+  
+  
+  .front img{
+     
+      height: 200px;
+    width: 200px;
+    position: relative;
+   animation-name: falling;
+   animation-duration: 5s;
+   animation-iteration-count: infinite;
+   
+     mix-blend-mode: multiply;
+  
+  }
+  
+  @keyframes falling {
+    0%{
+      transform: translateY(-350px);
+    }
+  
+    100%{
+      transform: translateY(600px);
+    }
+  }
+ 
+  
+   
+  
+  
+   
+  
+ 
+  butn:hover .stars{
+    display:block;
+    filter:drop-shadow(0 0 10px #fffdef)
+  }
+  
+  
+ 
+  .container{
+    position: relative;
+    display: flex;
+  
+    height: 1000px;
+    top: 5px;
+  
+   
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    left: 300px;
+    bottom: 400px;
+    z-index: 1;
+    
+  
+  }
+  
+  .container .card{
+    position: relative;
+    width: 200px;
+    height: 400px;
+    margin: 50px;
+    
+   
+    box-shadow: 10px 10px 50px rgba(159, 159, 159, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    /* left: 50%; */
+    bottom: 900px;
+  
+  }
+  
+  
+  .container .card .content{
+    padding: 20px;
+    text-align: center;
+    width: 1500px;
+    transition: 0.5s;
+    transform: translateY(100px);
+    opacity: 0;
+    transform: 0.5s;
+  }
+  
+  .container .card:hover .content{
+  transform: translateY(0px);
+  
+  opacity: 1;
+  }
+  
+  
+  
+  .container .card .content h2{
+    position:absolute;
+    top: -30px;
+    right: 30px;
+    font-size: 8em;
+    color: rgba(255, 255, 255,0.05);
+    pointer-events:none;
+  }
+  
+  
+  .container .card .content h3{
+    font-size: 1.8em;
+    color: #fff;
+    z-index: 1;
+    
+  }
+  
+  .container .card .content p{
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: 300;
+    font-family: myfont;
+  
+  }
+  
+  .container .card .content a{
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top: 15px;
+    background: #fff;
+    color: #000;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(0 , 0 , 0 , 0.2);
+  }
+  
+  .butn{
+    padding: 10px 15px;
+    border:none;
+    outline: none;
+    font-size: 3em;
+    color: #000000;
+    font-family: myfont;
+    background-color: rgb(128, 120, 178);
+   left: 670px;
+   bottom: 770px;
+    cursor: pointer;
+    box-shadow: 0 05px rgba(109, 109, 200, 0.666),
+    0 0 25px rgb(64, 56, 78);
+    font-family: "myfont",sans-serif;
+    position: relative;
+    z-index: 0;
+    border-radius: 12px;
+    transition: all 0.4s;
+  }
+
+
+  .butn:hover{
+    box-shadow: 0 0 5px rgb(85, 76, 112),
+    0 0 25px rgb(182, 178, 206) , 0 0 50px rgb(142, 124, 174),
+    0 0 100px rgb(38, 24, 33) , 0  0 200px rgb(189, 186, 211);
+    transform: scale(1.3);
+
+}
+
+.text{
+    position: absolute;
+    bottom: 1200px;
+    color: #fff;
+    font-family: myfont;
+    font-size: 3em;
+    left: 140px;
+}
